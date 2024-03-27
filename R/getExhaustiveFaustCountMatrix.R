@@ -60,10 +60,12 @@
             file.path(normalizePath(projectPath),
                       "faustData",
                       "metaData",
-                      "exhaustiveColNameMap.rds"))
+                      "exhaustiveColNameMap.rds"),
+           compress = FALSE)
     saveRDS(faustCountMatrix,
             file.path(normalizePath(projectPath),
                       "faustData",
-                      "exhaustiveFaustCountMatrix.rds"))
+                      "exhaustiveFaustCountMatrix.rds"),
+           compress = FALSE)
     return()
 }
